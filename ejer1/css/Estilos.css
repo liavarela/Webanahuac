@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+#container {
+    width: 70%;
+    margin: 0% auto;
+    background-color: #FFFD80;
+    padding: 1em;
+}
+h1 {
+    font-family: 'Nunito', sans-serif;
+    border-bottom: salmon 20px solid
+}
+.rojo {
+    color: red;
+}
+article {
+    border: dashed 3px pink;
+    padding: 1rem;
+}
+.primero {
+    margin: 100px 120px 120px 110px;
+    background-color: indianred
+}
