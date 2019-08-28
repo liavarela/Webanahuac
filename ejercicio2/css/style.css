@@ -65,3 +65,14 @@ background-color: #B0E8D4;
 h1{
     color: #BADDFF;
 }
+
+footer img{
+	width: 50px
+}
+
+.container {
+display: grid;
+grid-template-columns:100px 100px 100px 100px ;
+grid-template-rows: 100px 100px 100px 100px;
+gap: 30px
+}
