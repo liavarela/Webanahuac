@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Ej 3 Galería e Imágenes</title>
+        <link type="text/css" rel="stylesheet" href="css/lightgallery.css" />
+        <style>.ocultar {
+            display: none;
+        }
+
+        </style>
+    </head>
+    <body>
+       <div class="container">
+           <header></header>
+           <section>
+               <h1>Galería</h1>
+               <p>Aqui una muestra de mis trabajos</p>
+               <div class="galeria"></div>
+
+
+    <div id="lightgallery">
+        <a href="images/liacchi.jpg" data-sub-html="#caption1">
+            <img src="images/liacchi.tb.jpg" alt="ilustracion chava pelo azul"/>
+        </a>
+        <a href="images/blancoroto2.0.jpg" data-sub-html="#caption2">
+            <img src="images/blancoroto2.0.tb.jpg" alt="zorro con tres colas"/>
+        </a>
+        <a href="images/eva02.jpg" data-sub-html="#caption3">
+            <img src="images/eva02.tb.jpg" alt="robot gigante japones rojo en tokyo"/>
+        </a>
+        <a href="images/morraespacial.jpg" data-sub-html="#caption4">
+            <img src="images/morraespacial.tb.gif" alt="mujer con pelo rosa"/>
+        </a>
+      </div>
+      <div id="caption1" class="ocultar">
+          <h4>Liacchi</h4>
+          <p>Ilustradion de mi con pelo azul</p>
+      </div>
+      <div id="caption2" class="ocultar">
+          <h4>BR.02</h4>
+          <p>Otro logo de blancoroto</p>
+      </div>
+      <div id="caption3" class="ocultar">
+        <h4>EVA02</h4>
+        <p>Ilustracion del Eva 02 en tokyo</p>
+    </div>
+    <div id="caption4" class="ocultar">
+        <h4>Morra Espacial</h4>
+        <p>Ilustracion de dos peliculas fucionadas</p>
+    </div>
+           </section> 
+       </div>
+       
+    <!-- jQuery version must be >= 1.8.0; -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/lightgallery-all.js"></script>
+
+    <!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
+    <!-- lightgallery plugins -->
+    <script src="modules/lg-thumbnail.min.js"></script>
+    <script src="modules/lg-fullscreen.min.js"></script> 
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#lightgallery").lightGallery(); 
+        });
+    </script>
+
+
+    </body>
+</html>
