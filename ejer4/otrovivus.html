@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>blanco</title>
+    <style>
+            svg{
+                width: 80vh;
+            }
+            button, .button {
+				margin: 0; padding: 3px 6px;
+				border-radius: 6px;
+				border: 1px solid currentColor;
+				color: inherit;
+				background-color: rgba(255, 2, 2, 0.282);
+				font-size: 0.9rem;
+				font-weight: 300;
+				text-decoration: none;
+				cursor: pointer;
+				outline: 0;
+			}
+			button:hover {
+				background-color:darksalmon; 
+			}
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <section>
+                 <div id="blanco"></div>
+                 
+            <span class="boton">
+                <button onclick="myVivus.reset().play();">も</button>
+            </span>
+
+                 <script type="text/javascript" src="js/vivus.js"></script>
+
+                 <script>
+                   const myVivus = new Vivus('blanco', {duration: 100 , type:'oneByOne', file: 'images/br.svg' },);
+                 </script>
+                 
+                </section>
+            </div>
+</body>
+</html>
