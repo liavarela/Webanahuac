@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Cute+Font|Roboto+Condensed&display=swap');
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+#container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: ghostwhite
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Cute Font', cursive;
+    font-weight: 700;
+    padding: 1rem;
+}
+p {
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 1rem;
+    font-size: .8rem;
+    line-height: 1.2rem;
+    margin-left: 1.5rem;
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-gap: 10px;
+}
+
+#kumao {
+    width: 200px;
+    float: left;
+    shape-outside: circle(closest-side at 102px 85px);
+}
+#antarc {
+    height: 250px;
+    float: left;
+    shape-outside: url(../images/houseki_no_kuni___antarcticite_in_regular_uniform_by_clockworkbenzene-dbxwfs7.png);
+    shape-margin: 1rem;
+}
+#gurl {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    float: left;
+    shape-outside: polygon(42.25% 3.65%, 30.25% 79.17%, 68.5% 43.72%);
+    
+}
+#phos {
+    width: 400px;
+    float: left;
+    shape-outside: polygon(10.00% 5.87%, 51.25% 99.61%, 91.25% 24.16%);
+    clip-path: polygon(10.00% 5.87%, 51.25% 99.61%, 91.25% 24.16%);
+}
