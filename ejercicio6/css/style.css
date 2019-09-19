@@ -1,0 +1,73 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+  }
+  #wrapper {
+      width: 80%;
+      height: 100vh;
+      margin: 0 auto;
+      background-color: aliceblue;
+      display: flex;
+      /* flex-direction: column-reverse; 
+        flex-wrap: wrap-reverse;*/
+        /* flex-flow: column-reverse wrap-reverse; 
+        La convinacion de los ultimos dos*/
+        justify-content: center;
+        /* align-items: como buscatrazos dependiendo de en que parte del monitor quieres que se vea*/
+        align-items: center;
+        /* base aline sirve para que todos los textos queden en el mismo lugar */
+  }
+  section {
+      border: solid black 1px;
+      /* width: 400px; */
+  }
+  p {
+      padding: 1rem;
+  }
+  .uno {
+      background-color: aquamarine;
+      height: 40px;
+      order: 2;
+  }
+  .dos {
+      background-color: lightpink;
+  }
+  .tres {
+      background-color: darksalmon;
+      height: 100px;
+      order: 1;
+  }
+  .cuatro {
+      background-color: lightsalmon;
+      align-self: flex-end;
+
+  }
+  .cinco {
+      background-color: lightcoral;
+      height: 150px;
+  }
+  .seis {
+      background-color: ivory;
+  }
+  /* Segundo wrapper */
+  #wrapper2{
+      width: 80%;
+      height: 100vh;
+      margin: 0 auto;
+      background-color: rgb(138, 195, 245);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-content: space-around;
+
+  }
+  .box {
+      width: 300px;
+      
+  }
+  .cuatrob {
+      /* flex-grow: 1; */
+  }
