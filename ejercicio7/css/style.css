@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+  }
+/* hasta aqui css reset */
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  header {
+      background-color: lightpink;
+           
+  }
+  .behance {
+    width: 30%;
+    height:100px;
+    /* background-image: url(../images/behance-logo.svg); */
+  }
+  .instagram {
+    width: 30%;
+    height: 100px;
+    /* background-image: url(../images/iconmonstr-instagram-11.svg); */
+  }
+  .facebook {
+    width: 30%;
+    height: 100px;
+    /* background-image: url(../images/iconmonstr-instagram-11.svg); */
+  }
+  
+  h1{
+     font-family: 'Nunito', sans-serif;
+      color: pink;
+      flex: center;
+  }
+  h2{
+      font-family: 'Nunito', sans-serif;
+      color: lightgrey;
+  }
+  main {
+      background-image: url(../images/Captura\ de\ pantalla\ 2017-11-15\ a\ la\(s\)\ 01.38.13\ copia.png);
+     
+      
+  }
+nav ul {
+    display: flex;
+    text-decoration: none;
+}  
+li {
+
+}
