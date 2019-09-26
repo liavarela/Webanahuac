@@ -14,22 +14,27 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
   }
+  #container {
+  
+  }
+
   header {
       background-color: lightpink;
+      grid-area: h;
            
   }
   .behance {
-    width: 30%;
+    width: 50%;
     height:100px;
     /* background-image: url(../images/behance-logo.svg); */
   }
   .instagram {
-    width: 30%;
+    width: 50%;
     height: 100px;
     /* background-image: url(../images/iconmonstr-instagram-11.svg); */
   }
   .facebook {
-    width: 30%;
+    width: 50%;
     height: 100px;
     /* background-image: url(../images/iconmonstr-instagram-11.svg); */
   }
@@ -43,15 +48,39 @@ html {
       font-family: 'Nunito', sans-serif;
       color: lightgrey;
   }
+  object {
+    height: 55vh;
+  }
   main {
       background-image: url(../images/Captura\ de\ pantalla\ 2017-11-15\ a\ la\(s\)\ 01.38.13\ copia.png);
-     
-      
+    
+  }
+  .footer {
+    font-family: 'Nunito', sans-serif;
+    grid-area: f;
   }
 nav ul {
     display: flex;
     text-decoration: none;
 }  
-li {
+.construction {
+  width: 100px;
+}
 
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  html {
+    background-color: bisque;
+  }
+  
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  html {
+    background-color: beige;
+    font-size: 10px;
+    
+  }
 }
