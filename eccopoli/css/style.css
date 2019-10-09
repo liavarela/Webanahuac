@@ -1,0 +1,31 @@
+.container {
+    display: grid;
+}
+header{
+    background-color: bisque;
+    /* justify-content: center; */
+}
+footer {
+    background-color: bisque;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+
+
+}
+li a {
+    padding: .5rem;
+    text-decoration: none;
+}
+li a:hover {
+    /* background-color: brown; */
+    color: aquamarine;
+}
+main {
+    display: flex;
+}
+.proye{
+    background-image: url(../images/forma1.svg);
+    background-repeat: no-repeat;
+}
