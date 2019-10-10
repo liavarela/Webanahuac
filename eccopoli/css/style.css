@@ -1,13 +1,32 @@
+
 .container {
-    display: grid;
+    height: 200vh;
+    width: 80%;
+    margin: 0 auto;
+    display: grid; 
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 50px repeat(3, 1fr) 60px;
+    grid-gap: 10px;
+    grid-template-areas:
+    ". h h h h ."
+    ". m m m m ."
+    ". m m m m ."
+    ". m m m m ."
+    ". . f f . ."
 }
 header{
-    background-color: bisque;
-    /* justify-content: center; */
+    grid-area: h;
+    background-color: rgb(245, 239, 231);
+    height: 1rem;
+    /* display: flex; */
+    justify-content: space-between;
+
+    font-family: 'Overpass', sans-serif;
+font-size: 12px;
+    
 }
-footer {
-    background-color: bisque;
-}
+
+
 nav ul {
     display: flex;
     list-style: none;
@@ -23,9 +42,59 @@ li a:hover {
     color: aquamarine;
 }
 main {
-    display: flex;
+    grid-area: m;
+    /* display: flex; 
+    
+    height: 20vh;
+    width: 70%;
+    margin: 0 auto;*/
+    display: grid; 
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 10px;
+    grid-template-areas:
+    "p . . ."
+    ". . g ."
+    ". m . ."
+    ".  . i ."
+   
+   
+
 }
 .proye{
+    grid-area:p ;
     background-image: url(../images/forma1.svg);
     background-repeat: no-repeat;
+    height: 80px;
 }
+.gale{
+    grid-area:g ;
+    background-image: url(../images/forma1.svg);
+    background-repeat: no-repeat;
+    height: 1000px;
+    width: 1000px;
+}
+.mision{
+    grid-area:m ;
+    background-image: url(../images/forma1.svg);
+    background-repeat: no-repeat;
+    height: 80px;
+}
+.invol{
+    grid-area:i ;
+    background-image: url(../images/forma1.svg);
+    background-repeat: no-repeat;
+    height: 80px;
+}
+
+footer {
+    grid-area: f;
+    background-color: rgb(245, 239, 231);
+}
+
+/* Telefonos  */
+@media (min-width: 0px) and (max-width: 480px) {
+  
+    /* //CSS */
+    
+  }
