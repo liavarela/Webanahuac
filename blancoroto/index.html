@@ -7,21 +7,49 @@
     <meta name="description" content="Encuentra mis trabajos de diseño e ilustracion">
     <meta name="author" content="Analia Arriaga">
     <title>Blanco Roto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Varela+Round&display=swap" rel="stylesheet"> 
 </head> <div class="container">
-    <header>
-        <nav>
-            <ul>
-                
-                <li class="link"><a href="index.html"> <img src="images/eccopoli.svg" alt="logotipo" width="50px"></a> </li>
-                <li class="link"><a href="pilares.html">Pilares</a></li>
-                <li class="link"><a href="foros.html">Foros</a></li>
-                <li class="link"><a href="equipo.html">Equipo</a></li>
-                <li class="link"><a href="resultados.html">Resultados</a></li>
-                <li class="link"><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- el fondo que tenga puntitos flotando como estrellas o burbujas que la monita este hasta la derecha y que caiga con scroll reveal maybe que se mueva como flotando que los links aparezcan igual con scroll reveal pero como un pop-->
+
+    <!-- que en cada link aparezca la otra ilustracion de la monita viendo la foto principal y que se vaya mientras das scroll-->
 <body>
-    
+    <main>
+        <section class="home">
+                        <section class="link"><a href="index.html"><img src="images/logohome.svg" alt="logotipo" width="50px"></a></section>
+                        
+        </section>
+
+        <section class="trabajos">
+            <h1>Trabajos</h1>
+        
+                        <section class="link"><a href="trabajos.html">Echalo</a></section>
+                        
+        </section>
+       
+        <section class="ilu">
+            <h1>Ilustraciones</h1> 
+                        <section class="link"><a href="ilustraciones.html">Echalo</a></section>
+                       
+            
+        </section>
+        <section class="otros">
+            <h1>Otros</h1>
+                        <section class="link"><a href="otros.html">Echalo</a></section>
+                        
+        </section>
+        
+      
+        
+    </main>
+    <!-- js -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script>
+       
+        ScrollReveal().reveal('ilu', {scale: 0.5 });
+        ScrollReveal().reveal('h1', {scale: 0.5 });
+        // <section class="link"><a href="trabajos.html">Echalo</a></section>
+        ScrollReveal().reveal('otros', {delay: 2000 });
+    </script>
 </body>
 </html>

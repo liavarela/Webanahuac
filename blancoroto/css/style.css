@@ -1,0 +1,26 @@
+ 
+
+    /* font-family: 'Roboto Mono', monospace;
+
+    font-family: 'Varela Round', sans-serif; */
+
+
+ header{
+        grid-area: h;
+        background-color: rgb(109, 254, 252);
+        height: 1rem;
+        /* display: flex; */
+        justify-content: space-between;
+    
+        font-family: 'Overpass', sans-serif;
+    font-size: 12px;
+        
+    }
+main{
+    background-color:rgb(240, 211, 223); 
+    background-image: url(../images/cute.svg);
+    background-repeat: no-repeat; justify-content: flex-end;
+    justify-content: center;
+    font-family: 'Varela Round', sans-serif;
+    
+}

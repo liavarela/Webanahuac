@@ -1,6 +1,48 @@
+html {
+    height: 80%;
+    /* max-height: 600px; */
+    width: 800px;
+    background-color: hsla(200,40%,30%,.4);
+    background-image:       
+        url('https://78.media.tumblr.com/cae86e76225a25b17332dfc9cf8b1121/tumblr_p7n8kqHMuD1uy4lhuo1_540.png'), 
+        url('https://78.media.tumblr.com/66445d34fe560351d474af69ef3f2fb0/tumblr_p7n908E1Jb1uy4lhuo1_1280.png'),
+        url('https://78.media.tumblr.com/8cd0a12b7d9d5ba2c7d26f42c25de99f/tumblr_p7n8kqHMuD1uy4lhuo2_1280.png'),
+        url('https://78.media.tumblr.com/5ecb41b654f4e8878f59445b948ede50/tumblr_p7n8on19cV1uy4lhuo1_1280.png'),
+        url('https://78.media.tumblr.com/28bd9a2522fbf8981d680317ccbf4282/tumblr_p7n8kqHMuD1uy4lhuo3_1280.png');
+    background-repeat: repeat-x;
+    background-position: 
+        0 20%,
+        0 100%,
+        0 50%,
+        0 100%,
+        0 0;
+    background-size: 
+        2500px,
+        800px,
+        500px 200px,
+        1000px,
+        400px 260px;
+    animation: 70s para infinite linear;
+    }
+
+@keyframes para {
+    100% {
+        background-position: 
+            -5000px 20%,
+            -800px 95%,
+            500px 50%,
+            1000px 100%,
+            400px 0;
+        }
+    }
+    /* hasta aqui el fondo */
+
+    /* font-family: 'Roboto Mono', monospace;
+
+    font-family: 'Varela Round', sans-serif; */
 
 .container {
-    height: 200vh;
+    height: 100vh;
     width: 80%;
     margin: 0 auto;
     display: grid; 
@@ -65,26 +107,60 @@ main {
     grid-area:p ;
     background-image: url(../images/forma1.svg);
     background-repeat: no-repeat;
-    height: 80px;
-}
+    height: 200px;
+    width: 200px;
+    }
+    
+.proye section:before, .proye section:after {
+    content: '';
+    position: absolute;
+
+    width: 99px;
+    height: 99px;
+    border-radius: 50%;
+    border: 2px solid rgba(64, 58, 62, 0.7);
+    -webkit-filter: blur(10);
+            filter: blur(0);
+    -webkit-transform-origin: 50%;
+            transform-origin: 50%;
+    z-index: -1;
+  }
+  .proye section:hover:before, .proye section:hover:after {
+    border-color: transparent;
+    -webkit-filter: blur(2px);
+            filter: blur(2px);
+    -webkit-transform: scale(4);
+            transform: scale(4);
+    transition: 2100ms blur ease, 900ms border-color ease, 1000ms -webkit-transform ease;
+    transition: 1000ms transform ease, 2100ms blur ease, 900ms border-color ease;
+    transition: 1000ms transform ease, 2100ms blur ease, 900ms border-color ease, 1000ms -webkit-transform ease;
+  }
+  .proye section:hover:after {
+    transition-delay: 100ms;
+    
+  }
+  
+  
+  
+
 .gale{
     grid-area:g ;
     background-image: url(../images/forma1.svg);
     background-repeat: no-repeat;
-    height: 1000px;
-    width: 1000px;
+    height: 200px;
+    width: 200px;
 }
 .mision{
     grid-area:m ;
     background-image: url(../images/forma1.svg);
     background-repeat: no-repeat;
-    height: 80px;
+    height: 400px;
 }
 .invol{
     grid-area:i ;
     background-image: url(../images/forma1.svg);
     background-repeat: no-repeat;
-    height: 80px;
+    height: 200px;
 }
 
 footer {
